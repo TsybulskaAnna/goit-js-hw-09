@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"TCaP":[function(require,module,exports) {
 "use strict";require("../css/common.css");var t=document.querySelector("body"),n={startBtn:document.querySelector("[data-start]"),stopBtn:document.querySelector("[data-stop]")};n.stopBtn.disabled=!0;var r=null,e=1e3;function o(){for(var t=arguments.length,n=new Array(t),r=0;r<t;r++)n[r]=arguments[r];n.forEach(function(t){return t.disabled?t.disabled=!1:t.disabled=!0})}function a(n){t.style.backgroundColor=c(),r=setInterval(function(){t.style.backgroundColor=c()},n)}function c(){return"#".concat(Math.floor(16777215*Math.random()).toString(16))}n.startBtn.addEventListener("click",function(){o(n.stopBtn,n.startBtn),a(e)}),n.stopBtn.addEventListener("click",function(){o(n.stopBtn,n.startBtn),clearInterval(r)});
 },{"../css/common.css":"en75"}]},{},["TCaP"], null)
-//# sourceMappingURL=/TsybulskaAnna/goit-js-hw-08/01-color-switcher.8601ee90.js.map
+//# sourceMappingURL=/TsybulskaAnna/goit-js-hw-09/01-color-switcher.8601ee90.js.map
